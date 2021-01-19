@@ -33,7 +33,7 @@ def make_dataset(dir, max_dataset_size=float("inf")):
 
 
 def default_loader(path):
-    return Image.open(path).convert('RGB')
+    return Image.open(path).convert('RGB').crop(200, 100, 455, 355)
 
 
 class ImageFolder(data.Dataset):
