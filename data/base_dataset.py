@@ -70,8 +70,8 @@ def get_params(opt, size):
         new_w = opt.load_size
         new_h = opt.load_size * h // w
 
-    x = random.randint(0, np.maximum(0, new_w - opt.crop_size))
-    y = random.randint(0, np.maximum(0, new_h - opt.crop_size))
+    x = 200#random.randint(0, np.maximum(0, new_w - opt.crop_size))
+    y = 100#random.randint(0, np.maximum(0, new_h - opt.crop_size))
 
     flip = random.random() > 0.5
 
